@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="easy" class="org.example.spring.quests.EasyQuests"/>
+    <bean id="medium" class="org.example.spring.quests.MediumQuests"/>
+    <bean id="hard" class="org.example.spring.quests.HardQuests"/>
+
+    <bean id="knight" class="org.example.spring.heroes.Knight" scope="prototype">
+        <constructor-arg ref="hard"/>
+    </bean>
+
+</beans>

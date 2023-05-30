@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Всі записи</title>
+</head>
+<body>
+<h2>Всі записи</h2>
+<ul>
+    <li th:each="record : ${records}" th:text="${record}"></li>
+</ul>
+</body>
+</html>

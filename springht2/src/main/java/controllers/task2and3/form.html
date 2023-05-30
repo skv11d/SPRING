@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+</head>
+<body>
+    <h2>Форма</h2>
+    <form action="/form" method="post">
+        <input type="text" name="data" placeholder="Введіть дані">
+        <button type="submit">Зберегти</button>
+    </form>
+
+    <form action="/display" method="get">
+        <button type="submit">Вивести всі записи</button>
+    </form>
+</body>
+</html>
